@@ -20,6 +20,11 @@
 	<button id='fullScreenButton'>DCLXVI  fullscrean</button>
 	
 	<script src="script.js"></script>
+	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+	<script>
+  // Отправляет событие инициализации нативному клиенту
+       vkBridge.send('VKWebAppInit');
+     </script>
 </body>
 
 </html>
