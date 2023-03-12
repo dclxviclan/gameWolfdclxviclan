@@ -6,6 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DCLXVICLAN</title>
 	<link rel="stylesheet" href="style.css" />
+	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+	<script>
+  // Отправляет событие инициализации нативному клиенту
+       vkBridge.send('VKWebAppInit');
+     </script>
 </head>
 
 <body>
@@ -20,11 +25,7 @@
 	<button id='fullScreenButton'>DCLXVI  fullscrean</button>
 	
 	<script src="script.js"></script>
-	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
-	<script>
-  // Отправляет событие инициализации нативному клиенту
-       vkBridge.send('VKWebAppInit');
-     </script>
+	
 </body>
 
 </html>
