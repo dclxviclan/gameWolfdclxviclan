@@ -111,6 +111,10 @@ window.addEventListener('load', function(){
 			}  else if (input.keys.indexOf('ArrowUp') > -1 || input.keys.indexOf('swipe up') > -1 && this.onGround()){
 				this.vy -= 28;
 			} 
+
+			else if (input.keys.indexOf('ArrowDown') > -1 || input.keys.indexOf('swipe down') > -1 && this.onGround()){
+				this.vy += 28;
+			}
 			else {
 				this.speed = 0;
 			}
